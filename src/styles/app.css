@@ -2,4 +2,19 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+ 
+}
+
+:root{
+
+    /*FONT SIZE **/
+    --premiereFontSize: calc(16px + 0.5vw);
+    --fontSizeAccueil: calc(32px + 0.5vw);
+
+    /**COULEURS **/
+    --colorHeader: white;
+    --colorBackgroundHeader :rgba(0,0,0,0.7);
+    --colorHeaderHover: rgb(193, 181, 181);
+   
+
 }
