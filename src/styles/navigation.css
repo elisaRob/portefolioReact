@@ -18,6 +18,20 @@
     align-items:center;
 } 
 
+.enTete .maPresentation .svgPageAccueil path,
+.enTete .maPresentation .svgPageAccueil path:nth-child(2){
+    transition:0.5s fill;
+    cursor:pointer;
+}
+
+.enTete .maPresentation .svgPageAccueil:hover path{
+    fill:#fff
+}
+
+.enTete .maPresentation .svgPageAccueil:hover path:nth-child(2){
+    fill:#0288d1
+}
+
 /* .enTete .maPresentation span{
     color:var(--colorHeader)
 }
@@ -26,6 +40,87 @@
     margin-inline-end:10px;
     border-radius:5px;
 }  */
+
+.enTete .menuIcon{
+    display: none;
+    cursor:pointer
+}
+
+.enTete .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--colorHeader);
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index:10;
+  }
+  
+  .enTete.menuOpen .bar:nth-child(1) {
+    transform-origin:center;
+    transform: translateY(9px)  rotate(-45deg);
+   
+  }
+
+  
+  
+  .enTete.menuOpen .bar:nth-child(2) {
+    transform-origin:center;
+    transform: rotate(45deg);
+   
+  }
+  
+  .enTete.menuOpen .bar:nth-child(3) {
+    opacity:0;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .enTete .menuIcon {
+      display: block;
+      z-index:10
+    }
+  
+    .enTete .navigation {
+      display:none;
+
+    }
+
+    .enTete.menuOpen .navigation{
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        height:70%;
+        width:100%;
+        background-color:var(--colorBackgroundHeaderHamberger);
+        z-index:8
+    }
+
+    .enTete.menuOpen .navigation ul{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .enTete.menuOpen .navigation ul li {
+        padding-block:30px;
+  
+    }
+
+    .enTete.menuOpen .navigation ul li a:before{
+        display:none
+    }
+  
+    .enTete.menuOpen .navigation ul li a span{
+        text-transform:uppercase
+    }
+  }
 
 .enTete .navigation{
     color:var(--colorHeader)

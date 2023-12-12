@@ -14,7 +14,10 @@
     /**COULEURS **/
     --colorHeader: white;
     --colorBackgroundHeader :rgba(0,0,0,0.7);
-    --colorHeaderHover: rgb(193, 181, 181);
+    --colorHeaderHover: rgba(207,227,238);
+    --colorBlack: black;
+    --colorBoutonBackgroundAccueil:rgba(207,227,238);
+    --colorBackgroundHeaderHamberger:rgba(0,0,0,0.9);
    
 
 }
