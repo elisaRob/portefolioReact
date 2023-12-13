@@ -119,3 +119,11 @@
     z-index:5
 }
 
+.accueil .lienUtile{
+    transition:0.45s color;
+}
+
+.accueil .lienUtile:hover{
+    color:var(--colorHeaderHover)
+}
+

@@ -97,7 +97,16 @@
 
     .enTete .menuIcon {
       display: block;
-      z-index:10
+      z-index:10;
+      
+    }
+
+    .enTete .menuIcon .bar{
+        transition:0.5s background-color
+    }
+
+    .enTete .menuIcon:hover .bar{
+        background-color:#0288d1
     }
   
     .enTete .navigation {
