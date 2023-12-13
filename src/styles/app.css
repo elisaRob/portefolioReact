@@ -2,26 +2,29 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:var(--fontFamily1)
  
 }
 
 :root{
 
     /*FONT SIZE **/
-    --premiereFontSize: clamp(16px, 3vw, 20px);
+    --premiereFontSize: 20px;
     --deuxiemeFontSize: clamp(20px, 3vw, 24px);
-    --fontSizeAccueil: clamp(32px, 3vw, 40px);
+    --fontSizeAccueil: 50px;
 
     /**COULEURS **/
     --colorHeader: black;
     --colorBackgroundHeader :#bfb2b5;
-    --colorHeaderHover: rgba(207,227,238);
+    --colorHeaderHover: #0288d1;
     --colorBlack: black;
     --colorBoutonBackgroundAccueil:rgba(207,227,238);
-    --colorBackgroundHeaderHamberger:rgba(191,178,181,0.9);
+    --colorBackgroundHeaderHamberger:rgba(191,178,181);
     --colorContenuPageAccueil: black;
-    --colorBackgroundPageAccueil:#eadbde
-   
+    --colorBackgroundPageAccueil:#eadbde;
+
+    /**FONT FAMILY**/
+    --fontFamily1: Arial, Helvetica, sans-serif;
 
 }
 
