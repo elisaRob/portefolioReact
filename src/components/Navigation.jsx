@@ -29,7 +29,7 @@ const toggle=() => {
 
   return (
     <header className={`enTete ${isMenuOpen ? "menuOpen" : ""}`} ref={utilisationReference}>
-
+      <div class="sr-only">This text is hidden.</div> 
       {/* <div className="maPresentation">
         <img src="./media/img/photo.webp" width="73px" alt="Portait d'Elisabeth ROBERT AOUCHER" />
         <span>Elisa ROBERT AOUCHER</span>

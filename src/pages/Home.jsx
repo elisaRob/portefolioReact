@@ -5,10 +5,13 @@ import "../styles/home.css";
 const Home=()=>{
     return(
        <main className="accueil">
-            <div className="quiSuisJe">
-                <span>Elisabeth ROBERT AOUCHER</span>
-                <h1>Développeuse Web sur Poitiers</h1>     
-                <div className="paragrapheQuiSuisJeEtPhoto">
+            <section className="quiSuisJe">
+                <section>
+                    <span>Elisabeth ROBERT AOUCHER</span>
+                    <h1>Développeuse Web sur Poitiers</h1>   
+                </section>
+            
+                <section className="paragrapheQuiSuisJeEtPhoto">
                     <p>
                        Bonjour,<br/><br/>
                         J'ai 34 ans et je suis développeuse web. Mon parcours professionnel a débuté dans le domaine médical. 
@@ -21,11 +24,10 @@ const Home=()=>{
                         <br/><br/>Je souhaite trouver <strong>un poste, faire une alternance, ou un stage longue durée (6 mois)</strong>, je suis ouverte à la proposition
                         de CDD car les solutions <strong>AFPR et POEI de pôle emploi</strong> permettent de soutenir les entreprises qui sont prêtes à former leurs futurs employés.
                     </p>
-
+                    
                     <img src="../public/media/img/photo.webp" alt="photo de moi" />
-                </div>
-            </div>         
-            {/* <img src="../public/media/img/montagne.jpg" alt=""/> */}
+                </section>
+            </section>         
        </main>
     ) 
 }
