@@ -75,6 +75,11 @@
   
 
   @media screen and (max-width: 768px) {
+
+    .enTete{
+        position:fixed;
+    }
+
     .enTete .menuIcon {
       display: block;
       z-index:10
@@ -83,6 +88,11 @@
     .enTete .navigation {
       display:none;
 
+
+    }
+
+    .enTete.menuOpen{
+        position:static
     }
 
     .enTete.menuOpen .navigation{
@@ -93,7 +103,9 @@
         height:70%;
         width:100%;
         background-color:var(--colorBackgroundHeaderHamberger);
-        z-index:8
+        z-index:8;
+        color:var(--colorBlack);
+        font-weight:bold
     }
 
     .enTete.menuOpen .navigation ul{

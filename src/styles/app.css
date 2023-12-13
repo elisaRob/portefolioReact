@@ -9,16 +9,18 @@
 
     /*FONT SIZE **/
     --premiereFontSize: calc(16px + 0.5vw);
+    --deuxiemeFontSize:calc(20px + 0.5vw);
     --fontSizeAccueil: calc(32px + 0.5vw);
 
     /**COULEURS **/
     --colorHeader: white;
-    --colorBackgroundHeader :rgba(0,0,0,0.7);
+    --colorBackgroundHeader :#bfb2b5;
     --colorHeaderHover: rgba(207,227,238);
     --colorBlack: black;
     --colorBoutonBackgroundAccueil:rgba(207,227,238);
-    --colorBackgroundHeaderHamberger:rgba(0,0,0,0.9);
-    --colorContenuPageAccueil: black
+    --colorBackgroundHeaderHamberger:rgba(191,178,181,0.9);
+    --colorContenuPageAccueil: black;
+    --colorBackgroundPageAccueil:#eadbde
    
 
 }

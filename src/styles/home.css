@@ -3,18 +3,17 @@
 .accueil{
     /* height:calc(100vh - 118px); */
     padding-block:40px;
-   
+    max-width:1400px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-.accueil img{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:-1;
-    object-fit:cover;
-    opacity:0.5
+
+@media screen and (max-width:768px){
+    .accueil{
+        padding-block-end:40px;
+        padding-block-start:140px
+    }
 }
 
 
@@ -23,7 +22,8 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    height:100%
+    height:100%;
+    padding-inline:50px;
 }
 
 .accueil .quiSuisJe span{
@@ -35,21 +35,55 @@
 
 .accueil .quiSuisJe h1{
     color:var(--colorContenuPageAccueil);
-    margin-block-end:20px
+    margin-block-end:30px;
+    margin-block-start:10px
 }
 
-.accueil .quiSuisJe .paragrapheQuiSuisJe{
+@media screen and (max-width:768px){
+    .accueil .quiSuisJe h1{
+        font-size:var(--deuxiemeFontSize)
+    }
+
+    .accueil .quiSuisJe {
+        padding-inline:10px
+    }
+}
+
+.accueil .quiSuisJe .paragrapheQuiSuisJeEtPhoto{
     color:var(--colorContenuPageAccueil);
     font-size:var(--premiereFontSize);
-    width:70%;
-    max-height:calc(100vh - 118px);
+    width:100%;
+    display:flex;
+    padding-inline:50px;
 }
+
+.accueil .quiSuisJe .paragrapheQuiSuisJeEtPhoto p{
+    padding-inline-end:50px;
+}
+
+.accueil .quiSuisJe .paragrapheQuiSuisJeEtPhoto img{
+    width:300px;
+    height:400px;
+    object-fit:cover;
+    border-radius:10%
+}
+
+@media screen and (max-width:1141px){
+    .accueil .quiSuisJe .paragrapheQuiSuisJeEtPhoto img{
+        display:none
+    }
+    .accueil .quiSuisJe .paragrapheQuiSuisJeEtPhoto p{
+        padding-inline-end:0px;
+    }
+}
+
+
 
 .accueil .quiSuisJe button{
     margin-block-start:30px;
     border-radius:5px;
     padding-block:10px;
-    padding-inline:10px;
+    padding-inline:15px;
     background-color:var(--colorBoutonBackgroundAccueil);
     position:relative;
     transition:0.5s background-color;
