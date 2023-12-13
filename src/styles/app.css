@@ -8,12 +8,12 @@
 :root{
 
     /*FONT SIZE **/
-    --premiereFontSize: calc(16px + 0.5vw);
-    --deuxiemeFontSize:calc(20px + 0.5vw);
-    --fontSizeAccueil: calc(32px + 0.5vw);
+    --premiereFontSize: clamp(16px, 3vw, 20px);
+    --deuxiemeFontSize: clamp(20px, 3vw, 24px);
+    --fontSizeAccueil: clamp(32px, 3vw, 40px);
 
     /**COULEURS **/
-    --colorHeader: white;
+    --colorHeader: black;
     --colorBackgroundHeader :#bfb2b5;
     --colorHeaderHover: rgba(207,227,238);
     --colorBlack: black;

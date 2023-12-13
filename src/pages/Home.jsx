@@ -4,7 +4,7 @@ import "../styles/home.css";
 
 const Home=()=>{
     return(
-       <div className="accueil">
+       <main className="accueil">
             <div className="quiSuisJe">
                 <span>Elisabeth ROBERT AOUCHER</span>
                 <h1>Développeuse Web sur Poitiers</h1>     
@@ -26,7 +26,7 @@ const Home=()=>{
                 </div>
             </div>         
             {/* <img src="../public/media/img/montagne.jpg" alt=""/> */}
-       </div>
+       </main>
     ) 
 }
 

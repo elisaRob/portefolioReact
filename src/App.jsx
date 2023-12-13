@@ -7,6 +7,7 @@ import Knoweldges from "./pages/Knoweldges";
 import Navigation from "./components/Navigation";
 import { BrowserRouter } from "react-router-dom";
 import { Route, Switch } from "react-router";
+import Footer from "./components/Footer"
 
 
 
@@ -23,6 +24,7 @@ function App() {
               <Route exact path="/contact" component={Contact} />
               <Route component={NotFound} />
             </Switch>
+            <Footer />
       </BrowserRouter>
     </>
   );

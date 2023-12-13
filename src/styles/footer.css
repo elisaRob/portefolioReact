@@ -1,0 +1,46 @@
+footer{
+    background-color:var(--colorBackgroundHeader);
+    padding-inline:20px;
+    padding-block:20px
+}
+
+
+footer .meContacter a{
+    text-decoration:none
+}
+
+footer .premierContainerFooter{
+    display:flex;
+    justify-content:space-around;
+}
+
+footer .premierContainerFooter .meContacter h2,
+footer .premierContainerFooter .liensUtiles h2{
+    font-size:var(--premiereFontSize);
+    margin-block-end:10px
+}
+
+footer .premierContainerFooter .liensUtiles ul {
+    list-style-type:none
+}
+
+footer .premierContainerFooter .liensUtiles ul li a{
+    text-decoration:none;
+
+}
+
+footer .autresInformationsUtiles{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-block-start:20px
+}
+
+footer .separateur{
+    margin-right:auto;
+    margin-left:auto;
+    width:100px;
+    height:1px;
+    background-color:black;
+    display:block;
+}
