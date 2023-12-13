@@ -9,18 +9,20 @@ import { BrowserRouter } from "react-router-dom";
 import { Route, Switch } from "react-router";
 
 
+
+
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Navigation />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/competence" component={Knoweldges} />
-          <Route exact path="/portefolio" component={Portefolio} />
-          <Route exact path="/contact" component={Contact} />
-          <Route component={NotFound} />
-        </Switch>
+          <Navigation />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/competence" component={Knoweldges} />
+              <Route exact path="/portefolio" component={Portefolio} />
+              <Route exact path="/contact" component={Contact} />
+              <Route component={NotFound} />
+            </Switch>
       </BrowserRouter>
     </>
   );

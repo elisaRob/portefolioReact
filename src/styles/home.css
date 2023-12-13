@@ -1,5 +1,9 @@
+
+
 .accueil{
-    height:calc(100vh - 118px);
+    /* height:calc(100vh - 118px); */
+    padding-block:40px;
+   
 }
 
 .accueil img{
@@ -10,6 +14,7 @@
     height:100%;
     z-index:-1;
     object-fit:cover;
+    opacity:0.5
 }
 
 
@@ -24,12 +29,20 @@
 .accueil .quiSuisJe span{
     font-weight:bold;
     font-size:var(--fontSizeAccueil);
-    color:var(--colorHeader);
+    color:var(--colorContenuPageAccueil);
     text-align:center;
 }
 
 .accueil .quiSuisJe h1{
-    color:var(--colorHeader)
+    color:var(--colorContenuPageAccueil);
+    margin-block-end:20px
+}
+
+.accueil .quiSuisJe .paragrapheQuiSuisJe{
+    color:var(--colorContenuPageAccueil);
+    font-size:var(--premiereFontSize);
+    width:70%;
+    max-height:calc(100vh - 118px);
 }
 
 .accueil .quiSuisJe button{
@@ -54,7 +67,7 @@
     left:0;
     width:100%;
     height:100%;
-    background-color: var(--colorHeader);
+    background-color: var(--colorContenuPageAccueil);
     transform:translateX(-100%);
     transition:0.5s transform;
 }

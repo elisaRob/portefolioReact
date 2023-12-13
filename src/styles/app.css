@@ -18,6 +18,12 @@
     --colorBlack: black;
     --colorBoutonBackgroundAccueil:rgba(207,227,238);
     --colorBackgroundHeaderHamberger:rgba(0,0,0,0.9);
+    --colorContenuPageAccueil: black
    
 
+}
+
+
+.homeBackground{
+    background-color: blue;
 }
