@@ -2,10 +2,7 @@
 
 .accueil{
     /* height:calc(100vh - 118px); */
-    padding-block:40px;
-    max-width:1400px;
-    margin-left:auto;
-    margin-right:auto;
+    width:100%;
     background-color: var(--colorBackgroundPageAccueil);
 }
 
@@ -25,6 +22,10 @@
     align-items:center;
     height:100%;
     padding-inline:50px;
+    padding-block:40px;
+    max-width:1400px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .accueil .quiSuisJe span{
