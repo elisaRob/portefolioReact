@@ -33,6 +33,13 @@
     font-size:var(--fontSizeAccueil);
     color:var(--colorContenuPageAccueil);
     text-align:center;
+    line-height:75px;
+}
+
+@media screen and (max-width:527px){
+    .accueil .quiSuisJe span{
+        line-height:50px;
+    }
 }
 
 .accueil .quiSuisJe h1{
@@ -64,10 +71,11 @@
 }
 
 .accueil .quiSuisJe .paragrapheQuiSuisJeEtPhoto img{
-    width:300px;
-    height:400px;
+    aspect-ratio:3/4;
     object-fit:cover;
-    border-radius:10%
+    border-radius:10%;
+    max-width:300px;
+    
 }
 
 @media screen and (max-width:1141px){

@@ -2,30 +2,44 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:var(--fontFamily1)
+    font-family:var(--fontFamily1);
+    line-height:29px
  
 }
 
 :root{
 
     /*FONT SIZE **/
-    --premiereFontSize: 20px;
-    --deuxiemeFontSize: 18px;
-    --fontSizeAccueil: 50px;
+    --premiereFontSize: 1.2rem; /* Environ 19.2px */
+    --deuxiemeFontSize: 1rem; /* Environ 16px */
+    --fontSizeAccueil: 3rem; /* Environ 48px */
+
+  
 
     /**COULEURS **/
     --colorHeader: black;
     --colorBackgroundHeader :#bfb2b5;
-    --colorHeaderHover: #0288d1;
+    --colorHeaderHover: #006494;
     --colorBlack: black;
     --colorBoutonBackgroundAccueil:rgba(207,227,238);
     --colorBackgroundHeaderHamberger:rgba(191,178,181);
     --colorContenuPageAccueil: black;
     --colorBackgroundPageAccueil:#eadbde;
+    --couleurLien:rgba(6, 6, 195, 1);
 
     /**FONT FAMILY**/
     --fontFamily1: Arial, Helvetica, sans-serif;
 
+
+
+}
+
+a{
+    color:var(--couleurLien);
+}
+
+a:visited{
+    color:var(--colorHeaderHover)
 }
 
 
@@ -33,6 +47,13 @@
 /* pour les liens et l'accéssibilité */
 .lienUtile[target="_blank"]:after{
     content : url(../public/media/img/lienExterne.svg);
+}
+
+@media screen and (max-width:527px){
+    :root{
+        --fontSizeAccueil: 2rem
+    }
+   
 }
 
 

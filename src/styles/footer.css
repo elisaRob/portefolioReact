@@ -7,6 +7,7 @@ footer{
 footer a{
     text-decoration:none;
     transition: color 0.5s;
+    cursor:pointer
 }
 
 footer a:hover{
@@ -62,6 +63,8 @@ footer .autresInformationsUtiles{
     align-items:center;
     padding-block-start:20px
 }
+
+
 
 footer .separateur{
     margin-right:auto;
