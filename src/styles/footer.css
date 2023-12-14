@@ -1,7 +1,16 @@
 footer{
     background-color:var(--colorBackgroundHeader);
-    padding-inline:20px;
+    padding-inline:30px;
     padding-block:20px
+}
+
+footer a{
+    text-decoration:none;
+    transition: color 0.5s;
+}
+
+footer a:hover{
+    color:var(--colorHeaderHover)
 }
 
 footer .premierContainerFooter .meContacter .svgPageAccueilFooter path,
@@ -18,30 +27,34 @@ footer .premierContainerFooter .meContacter .svgPageAccueilFooter:hover path:nth
     fill:#0288d1
 }
 
-
-footer .meContacter a{
-    text-decoration:none
+footer .meContacter span,
+footer .premierContainerFooter .liensUtiles ul li a{
+    font-size:var(--deuxiemeFontSize);
 }
+/*footer .meContacter a{
+    text-decoration:none
+}*/
 
 footer .premierContainerFooter{
     display:flex;
     justify-content:space-around;
 }
 
-footer .premierContainerFooter .meContacter h2,
-footer .premierContainerFooter .liensUtiles h2{
+footer .premierContainerFooter .meContacter .titreFooter,
+footer .premierContainerFooter .liensUtiles .titreFooter{
     font-size:var(--premiereFontSize);
-    margin-block-end:10px
+    margin-block-end:10px;
+    font-weight:bold;
 }
 
 footer .premierContainerFooter .liensUtiles ul {
     list-style-type:none
 }
 
-footer .premierContainerFooter .liensUtiles ul li a{
+/*footer .premierContainerFooter .liensUtiles ul li a{
     text-decoration:none;
 
-}
+}*/
 
 footer .autresInformationsUtiles{
     display:flex;
@@ -57,4 +70,16 @@ footer .separateur{
     height:1px;
     background-color:black;
     display:block;
+}
+
+@media screen and (max-width:768px){
+    footer .premierContainerFooter{
+        flex-direction:column;
+
+    }
+
+    footer .premierContainerFooter .meContacter,
+    footer .premierContainerFooter .liensUtiles{
+        margin-block-end:20px
+    }
 }

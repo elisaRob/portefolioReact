@@ -10,7 +10,7 @@
 
     /*FONT SIZE **/
     --premiereFontSize: 20px;
-    --deuxiemeFontSize: clamp(20px, 3vw, 24px);
+    --deuxiemeFontSize: 18px;
     --fontSizeAccueil: 50px;
 
     /**COULEURS **/
@@ -29,6 +29,11 @@
 }
 
 
-.homeBackground{
-    background-color: blue;
+
+/* pour les liens et l'accéssibilité */
+.lienUtile[target="_blank"]:after{
+    content : url(../public/media/img/lienExterne.svg);
 }
+
+
+
