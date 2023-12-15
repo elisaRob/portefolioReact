@@ -18,12 +18,24 @@ const Formation = () => {
 
   return (
     <div className="maFormation">
-      <h1>Ma formation</h1>
+
+    <div className="maFormationContenu>">
+
+      <h1>Mes formations et Expériences professionnelles</h1>
+
+      <div className="formationsEtExperiencesProfessionnelles">
+
+      <div className="mesFormations">
+
+      <h2>Formations</h2>
       <ul>
-        <p className="titreLi">Formation Udemy{" "}<i className={"flecheBas"} onClick={() => toggleDropDown("formationUdemy")}></i>
-        </p>
-        <li className={ !isOpenDropDownList?.formationUdemy ? " openDropDown" : ""}>
-          <ul className="sousListe">
+
+        <li className="listePremiere">
+          <p onClick={()=> toggleDropDown("formationUdemy")} className="titreLi">Formation Udemy{" "}<i className={"flecheBas"} onClick={() => toggleDropDown("formationUdemy")}></i>
+          </p>
+     
+     
+          <ul className={`sousListe ${ !isOpenDropDownList?.formationUdemy ? " openDropDown" : ""}`}>
             <li>
               <a href="https://www.udemy.com/course/css-animation-transitions-and-transforms-creativity-course/">
                 CSS Animation
@@ -61,13 +73,14 @@ const Formation = () => {
             </li>
           </ul>
         </li>
-        <li className="titreLi">Formation OpenClassroom</li>
-        <li>
-          <p className="titreLi">
+  
+        <li className="titreLi listePremiere">Formation OpenClassroom</li>
+        <li className="listePremiere">
+          <p className="titreLi" onClick={()=> toggleDropDown('technicienDeveloppeur')}>
             Technicien développeur Bac+2 avec le CNAM (Unité d'enseignement
             universitaire) <i className="flecheBas" onClick={()=> toggleDropDown('technicienDeveloppeur')}></i>
           </p>
-          <ul className="sousListe">
+          <ul className={`sousListe ${ !isOpenDropDownList?.technicienDeveloppeur ? " openDropDown" : ""}`}>
             <li>NFA031 - Programmation avec Java : notions de base</li>
             <li>NFA008 - Bases de données </li>
             <li>NFA040 - Architecture et langages Web </li>
@@ -90,17 +103,19 @@ const Formation = () => {
             <li>NFA035 - Programmation Java : bibliothèques et patterns </li>
           </ul>
         </li>
-        <li className="titreLi">
+        <li className="titreLi listePremiere">
           <a href="https://symfonycasts.com/">
             Abonnement et cours à SymfonyCast
           </a>
         </li>
-        <li>
-          <p className="titreLi">
+
+
+        <li className="listePremiere">
+          <p className="titreLi" onClick={()=> toggleDropDown('fabriqueDuNumerique')}>
             Fabrique du Numérique{" "}
-            <i className="flecheBas" onClick={toggleDropDown}></i>
+            <i className="flecheBas" onClick={()=> toggleDropDown('fabriqueDuNumerique')}></i>
           </p>
-          <ul className="sousListe">
+          <ul className={`sousListe ${ !isOpenDropDownList?.fabriqueDuNumerique ? " openDropDown" : ""}`}>
             <li>Connaissances générales informatique</li>
             <li>HTML-CSS</li>
             <li>JavaScript</li>
@@ -108,12 +123,22 @@ const Formation = () => {
             <li>Wordpress</li>
           </ul>
         </li>
-        <li>
-          <p className="titreLi">
+      </ul>
+
+      </div>
+     
+      <div className="mesExperiencesProfessionnelles">
+
+      <h2>Expériences professionnelles</h2>
+
+      <ul>
+
+        <li className="listePremiere">
+          <p className="titreLi" onClick={()=> toggleDropDown('webImpulse')}>
             Stage chez <a href="https://www.webimpulse.fr/">Web Impulse</a>{" "}
-            <i className="flecheBas" onClick={toggleDropDown}></i>
+            <i className="flecheBas" onClick={()=> toggleDropDown('webImpulse')}></i>
           </p>
-          <ul className="sousListe">
+          <ul className={`sousListe ${ !isOpenDropDownList?.webImpulse ? " openDropDown" : ""}`}>
             <li>HTML-CSS</li>
             <li>SASS</li>
             <li>Bootstrap</li>
@@ -123,12 +148,12 @@ const Formation = () => {
             <li>Easy Admin</li>
           </ul>
         </li>
-        <li>
-          <p className="titreLi">
+        <li className="listePremiere">
+          <p className="titreLi" onClick={()=> toggleDropDown('emmandarine')}>
             Stage chez <a href="https://www.emandarine.com/">emmandarine</a>{" "}
-            <i class="flecheBas" onClick={toggleDropDown}></i>
+            <i class="flecheBas" onClick={()=> toggleDropDown('emmandarine')}></i>
           </p>
-          <ul className="sousListe">
+          <ul className={`sousListe ${ !isOpenDropDownList?.emmandarine ? " openDropDown" : ""}`}>
             <li>HTML-CSS</li>
             <li>JavaScript</li>
             <li>PHP</li>
@@ -137,17 +162,23 @@ const Formation = () => {
             <li>Création de plugins</li>
           </ul>
         </li>
-        <li className="titreLi">Freelance avec emmandarine</li>
-        <p>
-          Création d'un site en créant un thème personalisé avec WordPress :
-          WordPress/PHP/HTML/CSS/JavaScript
-        </p>
-        <li>
-          <p className="titreLi">
+        <li className="titreLi listePremiere" onClick={()=> toggleDropDown('freelance')}>Freelance avec emmandarine <i className="flecheBas" onClick={()=> toggleDropDown('freelance')}></i>
+          <ul className={`sousListe ${ !isOpenDropDownList?.freelance ? " openDropDown" : ""}`}>
+            <li>Création d'un site en créant un thème personalisé</li>
+            <li>WordPress</li>
+            <li>PHP</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </li>
+    
+        <li className="listePremiere">
+          <p className="titreLi" onClick={()=> toggleDropDown('ayaline')}>
             Stage chez <a href="https://www.ayaline.com/">Ayaline</a>{" "}
-            <i className="flecheBas"></i>
+            <i className="flecheBas" onClick={()=> toggleDropDown('ayaline')}></i>
           </p>
-          <ul className="sousListe">
+          <ul className={`sousListe ${ !isOpenDropDownList?.ayaline ? " openDropDown" : ""}`}>
             <li>Accéssibilité / Performance</li>
             <li>React</li>
             <li>NextJs</li>
@@ -155,6 +186,11 @@ const Formation = () => {
           </ul>
         </li>
       </ul>
+      </div>
+      </div>
+
+      </div>      
+      
     </div>
   );
 };

@@ -3,7 +3,9 @@
     padding:0;
     box-sizing:border-box;
     font-family:var(--fontFamily1);
-    line-height:29px
+    line-height:29px;
+    
+ 
  
 }
 
@@ -13,6 +15,8 @@
     --premiereFontSize: 1.2rem; /* Environ 19.2px */
     --deuxiemeFontSize: 1rem; /* Environ 16px */
     --fontSizeAccueil: 3rem; /* Environ 48px */
+    --fontSizeAccueil2 : 2rem;
+    --fontSizeTitre1 : 1.5rem;
 
   
 
@@ -22,6 +26,7 @@
     --colorHeaderHover: #006494;
     --colorBlack: black;
     --colorBoutonBackgroundAccueil:rgba(207,227,238);
+    --colorBackgroundPageFormation:rgb(185, 166, 176);
     --colorBackgroundHeaderHamberger:rgba(191,178,181);
     --colorContenuPageAccueil: black;
     --colorBackgroundPageAccueil:#eadbde;
@@ -47,10 +52,10 @@ a{
     content : url(../public/media/img/lienExterne.svg);
 }
 
-
 @media screen and (max-width:768px){
     .maFormation,
-    .accueil{
+    .accueil,
+    .mesCompetenceEtMesQualites{
         padding-block-end:40px;
         padding-block-start:140px
     }

@@ -1,8 +1,45 @@
 .mesCompetenceEtMesQualites{
+    /* height:calc(100vh - 118px); */
+    width:100%;
+    background-color: var(--colorBackgroundPageAccueil);
+}
+
+.mesCompetenceEtMesQualites .mesCompetencesEtMesQualitesContenu {
+   
+    height:100%;
     padding-inline:50px;
     padding-block:40px;
+    max-width:1400px;
+    margin-left:auto;
+    margin-right:auto;
+
 }
 
 .mesCompetenceEtMesQualites .titreH1{
-    text-align:center
+    padding-block-end: 30px;
+    text-align: center;
+    line-height:75px;
+    font-size:var(--fontSizeAccueil2);
 }
+
+.mesCompetenceEtMesQualites .contenu{
+    display:flex;
+    flex-wrap:wrap;
+
+
+
+}
+
+.mesCompetencesEtMesQualitesContenu .contenu .mesCompetences,
+.mesCompetenceEtMesQualites .contenu .mesQualites{
+    flex-basis:50%;
+    flex-direction:column;
+}
+
+.mesCompetenceEtMesQualites .contenu .monCv{
+    display:flex;
+    flex-direction:column;
+    flex-basis:100%
+}
+
+

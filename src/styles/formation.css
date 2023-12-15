@@ -1,15 +1,54 @@
 .maFormation {
   padding-inline: 50px;
   padding-block: 40px;
+  width:100%;
+  background-color: var(--colorBackgroundPageFormation);
+  min-height:584px;
+  font-size:var(--premiereFontSize);
 }
+
 
 .maFormation h1 {
-  padding-block-end: 20px;
+  padding-block-end: 30px;
   text-align: center;
+  line-height:75px;
+  font-size:var(--fontSizeAccueil2);
 }
 
+.maFormation h2{
+  font-size:var(--fontSizeTitre1)
+}
+
+.maFormation .formationsEtExperiencesProfessionnelles{
+  display:flex;
+  justify-content:center;
+}
+
+.maFormation .formationsEtExperiencesProfessionnelles h2{
+  margin-block-end: 15px;
+}
+
+.maFormation .maFormationContenu {
+  max-width:1400px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+.maFormation .mesFormations{
+  margin-inline-end:20px;
+  width:50%
+}
+
+.maFormation .mesExperiencesProfessionnelles{
+  margin-inline-start:20px;
+  width:50%
+}
+
+
 .maFormation .titreLi {
-  font-weight: bold;
+
+  cursor:pointer;
 }
 
 .maFormation .sousListe {
@@ -27,6 +66,7 @@
   position: relative;
   top: -2px;
   left: 2px;
+  transition:border 0.5s
 }
 
 .maFormation .flecheBas:hover {
@@ -38,6 +78,122 @@
   display: none;
 }
 
-.maFormation li {
-  list-style-type: none;
+.maFormation .listePremiere{
+  list-style-type:none;
+  margin-block-end:15px;
 }
+
+.maFormation .sousListe {
+  list-style-type : square;
+}
+
+.maFormation a{
+  text-decoration: none;
+}
+
+@media screen and (max-width:900px){
+
+ 
+ 
+
+  .maFormation h1 {
+    line-height:50px;
+  }
+
+  .maFormation .formationsEtExperiencesProfessionnelles{
+    flex-direction:column;
+    align-items:center;
+  }
+  .maFormation .mesExperiencesProfessionnelles{
+    margin-inline-start:0px;
+
+  }
+
+  .maFormation .mesFormations{
+    margin-inline-end:0px;
+    margin-block-end:30px
+  }
+}
+
+@media screen and (max-width:779px){
+  .maFormation .mesFormations{
+    margin-inline-end:20px;
+    width:70%
+  }
+  
+  .maFormation .mesExperiencesProfessionnelles{
+    margin-inline-start:20px;
+    width:70%
+  }
+
+  .maFormation .mesExperiencesProfessionnelles{
+    margin-inline-start:0px;
+
+  }
+
+  .maFormation .mesFormations{
+    margin-inline-end:0px;
+    margin-block-end:30px
+  }
+
+  .maFormation .listePremiere{
+    margin-block-end:10px;
+  }
+}
+
+@media screen and (max-width:591px){
+  .maFormation .mesFormations{
+    margin-inline-end:20px;
+    width:85%
+  }
+
+  .maFormation h1 {
+    font-size:var(--fontSizeTitre1);
+    line-height:35px;
+  }
+
+  .maFormation h2{
+    font-size:var(--premiereFontSize)
+  }
+  
+  .maFormation .mesExperiencesProfessionnelles{
+    margin-inline-start:20px;
+    width:85%
+  }
+
+  .maFormation .mesExperiencesProfessionnelles{
+    margin-inline-start:0px;
+
+  }
+
+  .maFormation .mesFormations{
+    margin-inline-end:0px;
+    margin-block-end:30px
+  }
+
+  .maFormation .listePremiere{
+    margin-block-end:5px;
+  }
+}
+
+@media screen and (max-width:443px){
+  .maFormation .mesFormations{
+    margin-inline-end:20px;
+    width:95%
+  }
+
+  .maFormation .mesExperiencesProfessionnelles{
+    margin-inline-start:0px;
+
+  }
+
+  .maFormation .mesFormations{
+    margin-inline-end:0px;
+    margin-block-end:30px
+  }
+
+  .maFormation .formationsEtExperiencesProfessionnelles{
+    display: block;
+  }
+}
+
