@@ -6,15 +6,6 @@
     background-color: var(--colorBackgroundPageAccueil);
 }
 
-
-@media screen and (max-width:768px){
-    .accueil{
-        padding-block-end:40px;
-        padding-block-start:140px
-    }
-}
-
-
 .accueil .quiSuisJe {
     display:flex;
     flex-direction:column;

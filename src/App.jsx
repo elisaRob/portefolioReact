@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import { MentionLegales } from "./pages/MentionLegales";
 import { PlanDuSite } from "./pages/PlanDuSite";
 import { PolitiqueDeConfidentialite } from "./pages/PolitiqueDeConfidentialite";
+import Formation from "./pages/Formation";
 
 
 
@@ -25,6 +26,7 @@ function App() {
               <Route exact path="/competence" component={Knoweldges} />
               <Route exact path="/portefolio" component={Portefolio} />
               <Route exact path="/contact" component={Contact} />
+              <Route exact path="/formation" component={Formation} />
               <Route exact path="/mentions-legales" component={MentionLegales}/>
               <Route exact path="/plan-du-site" component={PlanDuSite}/>
               <Route exact path="/politique-de-confidentialite" component={PolitiqueDeConfidentialite} />
