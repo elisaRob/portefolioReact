@@ -46,7 +46,7 @@ const Knoweldges=()=>{
                         </ul>
                     </div>
 
-                    <div clasName="outils">
+                    <div className="outils">
                         <h3>Outils</h3>
                         <ul>
                             <li>Visual Studio Code</li>
@@ -55,7 +55,7 @@ const Knoweldges=()=>{
                         </ul>
                     </div>
 
-                    <div clasName="cms">
+                    <div className="cms">
                         <h3>CMS</h3>
                         <ul>
                             <li>Wordpress</li>

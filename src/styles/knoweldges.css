@@ -2,6 +2,7 @@
     /* height:calc(100vh - 118px); */
     width:100%;
     background-color: var(--colorBackgroundPageAccueil);
+    font-size:var(--premiereFontSize);
 }
 
 .mesCompetenceEtMesQualites .mesCompetencesEtMesQualitesContenu {
@@ -27,15 +28,21 @@
     flex-wrap:wrap;
 }
 
+.mesCompetenceEtMesQualites  h2{
+    text-align:center;
+}
+
 .mesCompetenceEtMesQualites .contenu .mesCompetences h2,
 .mesCompetenceEtMesQualites .contenu .mesCompetences .cms{
     flex-basis:100%
 }
 
+
 .mesCompetenceEtMesQualites .contenu .mesCompetences .partieFrontEnd,
 .mesCompetenceEtMesQualites .contenu .mesCompetences .partieBackEnd,
 .mesCompetenceEtMesQualites .contenu .mesCompetences .gestionDeProjet,
-.mesCompetenceEtMesQualites .contenu .mesCompetences .outils
+.mesCompetenceEtMesQualites .contenu .mesCompetences .outils,
+.mesCompetenceEtMesQualites .contenu .mesCompetences .cms
 {
 
     flex-basis:50%
