@@ -14,58 +14,62 @@ const Knoweldges=()=>{
                     <div className="mesCompetences">
 
                         <h2>Mes compétences</h2>
-                        <div className="partieFrontEnd">
-                            <h3>Front-end</h3>
+
+                        <div className="competencesConetenu">
+
+                            <div className="partieFrontEnd">
+                                <h3>Front-end</h3>
+                                <ul>
+                                    <li>HTML-CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                    <li>React</li>
+                                    <li>SASS</li>
+                                    <li>Affinity Designer</li>
+                                </ul>
+                            </div>
+
+                            <div className="partieBackEnd">
+                                <h3>Back-end</h3>
+
+                                <ul>
+                                    <li>PHP</li>
+                                    <li>Symfony</li>
+                                    <li>Base de données</li>
+                                    <li>Langage SQL</li>
+                                    <li>Java</li>
+                                </ul>
+                            </div>
+
+                            <div className="gestionDeProjet">
+                            <h3>Gestion de projet</h3>
                             <ul>
-                                <li>HTML-CSS</li>
-                                <li>JavaScript</li>
-                                <li>Bootstrap</li>
-                                <li>React</li>
-                                <li>SASS</li>
-                                <li>Affinity Designer</li>
+                                <li>Base sur la gestion de projet</li>
+                                <li>Scrum</li>
                             </ul>
                         </div>
 
-                        <div className="partieBackEnd">
-                            <h3>Back-end</h3>
-
+                        <div className="outils">
+                            <h3>Outils</h3>
                             <ul>
-                                <li>PHP</li>
-                                <li>Symfony</li>
-                                <li>Base de données</li>
-                                <li>Langage SQL</li>
-                                <li>Java</li>
+                                <li>Visual Studio Code</li>
+                                <li>PHP Storm</li>
+                                <li>Git/Github</li>
                             </ul>
                         </div>
 
-                        <div className="gestionDeProjet">
-                        <h3>Gestion de projet</h3>
-                        <ul>
-                            <li>Base sur la gestion de projet</li>
-                            <li>Scrum</li>
-                        </ul>
-                    </div>
-
-                    <div className="outils">
-                        <h3>Outils</h3>
-                        <ul>
-                            <li>Visual Studio Code</li>
-                            <li>PHP Storm</li>
-                            <li>Git/Github</li>
-                        </ul>
-                    </div>
-
-                    <div className="cms">
-                        <h3>CMS</h3>
-                        <ul>
-                            <li>Wordpress</li>
-                            <li>Elementor</li>
-                            <li>Création de thème wordpress personalisé</li>
-                        </ul>
+                        <div className="cms">
+                            <h3>CMS</h3>
+                            <ul>
+                                <li>Wordpress</li>
+                                <li>Elementor</li>
+                                <li>Création de thème wordpress personalisé</li>
+                            </ul>
+                        </div>
+                    
                     </div>
 
                 </div>
-
                    
                 <div className="mesQualites">
                     <h2>Mes qualités</h2>

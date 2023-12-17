@@ -17,25 +17,50 @@
 }
 
 .mesCompetenceEtMesQualites .titreH1{
-    padding-block-end: 30px;
+    /* padding-block-end: 30px; */
     text-align: center;
     line-height:75px;
     font-size:var(--fontSizeAccueil2);
 }
 
-.mesCompetenceEtMesQualites .contenu .mesCompetences{
+@media screen and (max-width:600px){
+    .mesCompetenceEtMesQualites .titreH1{
+
+   
+        line-height:40px;
+
+    }
+}
+
+
+
+/* .mesCompetenceEtMesQualites .contenu .mesCompetences{
     display:flex;
     flex-wrap:wrap;
+    list-style-type:none;
+   
+  
+} */
+
+.mesCompetenceEtMesQualites .contenu .mesCompetences .competencesConetenu{
+    display:flex;
+    flex-wrap:wrap;
+    list-style-type:none;
+    justify-content:center;
 }
 
 .mesCompetenceEtMesQualites  h2{
     text-align:center;
+    color:#851e1e
 }
 
-.mesCompetenceEtMesQualites .contenu .mesCompetences h2,
-.mesCompetenceEtMesQualites .contenu .mesCompetences .cms{
-    flex-basis:100%
-}
+/* .mesCompetenceEtMesQualites .contenu .mesCompetences h2,
+.mesCompetenceEtMesQualites .contenu .mesCompetences  .cms{
+    flex-basis:100% ;
+    width:100%;
+    margin-right:auto;
+    margin-left:auto;
+} */
 
 
 .mesCompetenceEtMesQualites .contenu .mesCompetences .partieFrontEnd,
@@ -44,8 +69,116 @@
 .mesCompetenceEtMesQualites .contenu .mesCompetences .outils,
 .mesCompetenceEtMesQualites .contenu .mesCompetences .cms
 {
+    
+    /* width:50%; */
+    flex-basis:50%;
 
-    flex-basis:50%
+}
+
+.mesCompetenceEtMesQualites .contenu .mesCompetences .partieFrontEnd ul,
+.mesCompetenceEtMesQualites .contenu .mesCompetences .partieBackEnd ul,
+.mesCompetenceEtMesQualites .contenu .mesCompetences .gestionDeProjet ul,
+.mesCompetenceEtMesQualites .contenu .mesCompetences .outils ul,
+.mesCompetenceEtMesQualites .contenu .mesCompetences .cms ul
+{
+    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-block-end:15px;
+
+}
+
+.mesCompetenceEtMesQualites .contenu .mesCompetences .partieFrontEnd,
+.mesCompetenceEtMesQualites .contenu .mesCompetences .outils{
+    
+    background-color: #dbc9cd;
+    border: 1px solid transparent;
+    border-radius: 50px;
+
+}
+
+.mesCompetenceEtMesQualites .contenu ul li{
+    list-style-type:none;
+    text-align:center;
+}
+
+.mesCompetenceEtMesQualites .contenu h2,
+.mesCompetenceEtMesQualites .contenu h3{
+    margin-block-end: 30px;
+    margin-block-start: 30px;
+    text-align:center;
+}
+
+.mesCompetenceEtMesQualites .contenu .mesQualites ul,
+.mesCompetenceEtMesQualites .contenu .monCv button{
+    display:flex;
+    flex-direction:column;
+    align-items:center
+}
+
+.mesCompetenceEtMesQualites .contenu .monCv button{
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:20px;
+    background-color: #dbc9cd;
+    position:relative;
+    overflow:hidden
+
+}
+
+.mesCompetenceEtMesQualites .contenu .monCv button:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform:translateX(-100%);
+    background-color:#851e1e;
+    border-radius:20px;
+    cursor:pointer;
+    transition:0.5s transform;
+}
+
+.mesCompetenceEtMesQualites .contenu .monCv button:hover:before{
+    transform:translateX(0)
+}
+
+.mesCompetenceEtMesQualites .contenu .monCv button a{
+    padding:10px 20px;
+    text-decoration:none;
+    color:black;
+    cursor:pointer;
+    font-size:var(--premiereFontSize);
+    z-index:7;
+    transition:0.5s color
+}
+
+.mesCompetenceEtMesQualites .contenu .monCv button:hover a{
+    color:var(--colorBackgroundPageAccueil)
+}
+
+@media screen and (max-width:838px){
+    .mesCompetenceEtMesQualites .contenu .mesCompetences .partieFrontEnd,
+    .mesCompetenceEtMesQualites .contenu .mesCompetences .partieBackEnd,
+    .mesCompetenceEtMesQualites .contenu .mesCompetences .gestionDeProjet,
+    .mesCompetenceEtMesQualites .contenu .mesCompetences .outils,
+    .mesCompetenceEtMesQualites .contenu .mesCompetences .cms
+    {
+        
+        /* width:50%; */
+        flex-basis:100%;
+
+    }
+
+    .mesCompetenceEtMesQualites .contenu .mesCompetences .partieFrontEnd,
+    .mesCompetenceEtMesQualites .contenu .mesCompetences .outils{
+    
+    background-color: transparent;
+    border: none;
+
+    }
 }
 
 /* .mesCompetenceEtMesQualites .contenu{
