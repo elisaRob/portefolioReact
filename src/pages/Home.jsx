@@ -25,7 +25,7 @@ const Home=()=>{
                         de CDD car les solutions <strong>AFPR et POEI de pôle emploi</strong> permettent de soutenir les entreprises qui sont prêtes à former leurs futurs employés.
                     </p>
                     
-                    <img width="300" height="400" loading="eager" decoding="sync" src="./media/img/photo.webp" alt="photo de moi" />
+                    <img width="300" height="400" loading="eager" decoding="sync" src="./assets/media/img/photo.webp" alt="photo de moi" />
                 </section>
             </section>         
        </main>
