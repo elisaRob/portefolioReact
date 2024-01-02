@@ -86,7 +86,7 @@ const Knoweldges=()=>{
                 <div className="monCv">
                     <h2>Mon Cv</h2>
                     <button>
-                        <a href="../public/media/cv/monCv.pdf" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
+                        <a href="../assets/media/cv/monCv.pdf" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
                     </button>
                 </div>
             
